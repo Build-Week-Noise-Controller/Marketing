@@ -1,10 +1,11 @@
-.button(@text-color: @tan, @background: @green, @size: 1rem 4rem) {
+.button(@text-color: @tan, @background: @green, @size: 1rem 4rem, @radius: 10px) {
   padding: @size;
-  border-radius: 10px;
+  border-radius: @radius;
   color: @text-color;
   background: @background;
   text-decoration: none;
   font-size: 2rem;
+  text-align: center;
 
   &:hover {
     background: @text-color;

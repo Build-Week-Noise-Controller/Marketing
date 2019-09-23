@@ -337,7 +337,26 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 10rem;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+nav a {
+  padding: 1.75rem 2.5rem;
+  border-radius: 0;
+  color: #fbeec1;
+  background: #659dbd;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+}
+nav a:hover {
+  background: #fbeec1;
+  color: #659dbd;
 }
 .button {
   padding: 1rem 4rem;
@@ -346,9 +365,9 @@ p {
   background: #15a74d;
   text-decoration: none;
   font-size: 2rem;
-  width: 30%;
-  min-width: 150px;
   text-align: center;
+  width: 30%;
+  min-width: 175px;
   margin-top: 5rem;
 }
 .button:hover {
