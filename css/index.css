@@ -314,6 +314,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   color: #fbeec1;
   background: #659dbd;
+  height: 100%;
 }
 h1,
 h2,
@@ -336,4 +337,41 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 10rem;
+}
+.button {
+  padding: 1rem 4rem;
+  border-radius: 10px;
+  color: #fbeec1;
+  background: #8d8741;
+  text-decoration: none;
+  font-size: 2rem;
+  width: 30%;
+  min-width: 150px;
+  text-align: center;
+  margin-top: 5rem;
+}
+.button:hover {
+  background: #fbeec1;
+  color: #8d8741;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section h1 {
+  font-size: 6rem;
+  margin: 0.2em;
+}
+section p {
+  font-size: 2rem;
+  margin: 0.5em;
+}
+section.login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
