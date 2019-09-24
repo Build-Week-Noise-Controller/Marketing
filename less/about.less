@@ -1,0 +1,78 @@
+.about-member {
+  .flex(@direction: row);
+  height: 35rem;
+  padding: 2em 0;
+
+  div {
+    padding: 0 0 0 6rem;
+  }
+
+  p {
+    margin-right: 0;
+  }
+
+  img {
+    width: 30%;
+    object-fit: cover;
+    height: 35rem;
+    padding: 2em 0;
+
+    @media @phone {
+      object-fit: cover;
+      width: 90%;
+      flex: 1;
+      overflow: hidden;
+    }
+  }
+
+  &:nth-child(2n) {
+    .flex(@direction: row-reverse);
+
+    div {
+      padding: 0 6rem 0 0;
+    }
+
+    p {
+      margin-left: 0;
+    }
+  }
+
+  @media @phone {
+    flex-direction: column;
+    height: 70rem;
+    padding: 2em 0 0 0;
+
+    .about-member-name,
+    .about-member-role {
+      text-align: center;
+    }
+
+    div {
+      padding: 0;
+      width: 90%;
+    }
+
+    &:nth-child(2n) {
+      flex-direction: column;
+      background: darken(@background, 10%);
+
+      div {
+        padding: 0;
+        width: 90%;
+      }
+    }
+  }
+}
+
+.about-member-name {
+  font-size: 4rem;
+  //   margin: 0;
+  @media @phone {
+    font-size: 3rem;
+    margin: 0.5em;
+  }
+}
+
+.about-member-role {
+  font-size: 3rem;
+}
