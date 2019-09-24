@@ -333,35 +333,62 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.container {
-  max-width: 1000px;
+.main-content {
   width: 100%;
-  margin: 0 auto;
+  max-width: 1000px;
+  min-width: 500px;
+  padding-top: 60px;
+}
+@media (max-width: 800px) {
+  .main-content {
+    max-width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding-top: 150px;
+    min-width: 300px;
+  }
 }
 img {
   max-width: 100%;
 }
-section {
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container .sidebar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 20%;
+  padding: 1em;
+  margin: 0 auto;
 }
-section h1 {
-  font-size: 7rem;
-  margin: 2rem;
+.container .sidebar img {
+  min-width: 20%;
+  padding: 5em 0;
+  object-fit: cover;
+  width: 100%;
 }
-section p {
-  font-size: 2.25rem;
-  text-align: justify;
-}
-@media (max-width: 500px) {
-  section h1 {
-    font-size: 5rem;
+@media (max-width: 800px) {
+  .container .sidebar {
+    display: none;
   }
-  section p {
-    font-size: 1.75rem;
-  }
+}
+.container .sidebar-left {
+  margin-right: 2em;
+}
+.container .sidebar-right {
+  margin-left: 2em;
 }
 .nav-container {
   display: flex;
@@ -369,6 +396,9 @@ section p {
   justify-content: center;
   align-items: center;
   background: #4885a7;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 nav {
   display: flex;
@@ -527,4 +557,29 @@ section.login {
 }
 .about-member-role {
   font-size: 3rem;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+section h1 {
+  font-size: 7rem;
+  margin: 2rem;
+}
+section p {
+  font-size: 2.25rem;
+  text-align: justify;
+  margin: 1em 0;
+}
+@media (max-width: 500px) {
+  section h1 {
+    font-size: 5rem;
+  }
+  section p {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
 }

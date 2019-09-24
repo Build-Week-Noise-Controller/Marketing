@@ -1,12 +1,14 @@
 .nav-container {
   .flex(@direction: row, @justify: center);
   background: darken(@background, 10%);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 nav {
   .flex(@direction: row, @justify: flex-end);
   width: 1000px;
-
   a {
     .button(
       @background: darken(@background, 10%),
