@@ -1,4 +1,4 @@
-.button(@text-color: @tan, @background: @green, @size: 1rem 4rem, @radius: 10px) {
+.button(@text-color: @tan, @background: @green, @size: 1rem 4rem, @radius: 10px, @width: 20%, @margin: 2.5rem 0) {
   padding: @size;
   border-radius: @radius;
   color: @text-color;
@@ -6,6 +6,8 @@
   text-decoration: none;
   font-size: 2rem;
   text-align: center;
+  width: @width;
+  margin: @margin;
 
   &:hover {
     background: @text-color;
