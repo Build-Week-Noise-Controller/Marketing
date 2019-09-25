@@ -17,8 +17,11 @@
     height: 35rem;
     padding: 2em 0;
 
+    @media @tablet {
+      width: 40%;
+    }
+
     @media @phone {
-      object-fit: cover;
       width: 90%;
       flex: 1;
       overflow: hidden;
@@ -35,6 +38,10 @@
     p {
       margin-left: 0;
     }
+  }
+
+  @media @tablet {
+    height: 60rem;
   }
 
   @media @phone {
@@ -54,7 +61,7 @@
 
     &:nth-child(2n) {
       flex-direction: column;
-      background: darken(@background, 10%);
+      background: fade(darken(@background, 10%), 70%);
 
       div {
         padding: 0;
@@ -67,11 +74,18 @@
 p.about-member-name {
   font-size: 4rem;
   margin: 0;
-  @media @phone {
+
+  @media @tablet {
     font-size: 3rem;
+    text-align: center;
   }
 }
 
 p.about-member-role {
   font-size: 3rem;
+
+  @media @tablet {
+    font-size: 3rem;
+    text-align: center;
+  }
 }

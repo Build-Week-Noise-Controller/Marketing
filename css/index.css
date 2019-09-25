@@ -312,9 +312,13 @@ html {
 html,
 body {
   font-family: "Ubuntu", sans-serif;
-  color: #fbeec1;
-  background: #659dbd;
+  color: #f8e191;
   height: 100%;
+  background-image: url("../img/32599.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 h1,
 h2,
@@ -337,7 +341,10 @@ p {
   width: 100%;
   max-width: 1000px;
   min-width: 500px;
-  padding-top: 60px;
+  margin-top: 68px;
+  padding-left: 2em;
+  padding-right: 2em;
+  background: rgba(101, 157, 189, 0.9);
 }
 @media (max-width: 800px) {
   .main-content {
@@ -352,6 +359,8 @@ p {
     align-items: center;
     max-width: 100%;
     padding-top: 150px;
+    padding-left: 0;
+    padding-right: 0;
     min-width: 300px;
   }
 }
@@ -364,36 +373,18 @@ img {
   justify-content: center;
   align-items: flex-start;
   padding: 0 1em;
-}
-.container .sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 12%;
-  padding: 1em;
-  margin: 0 auto;
-}
-.container .sidebar img {
-  min-width: 20%;
-  padding: 5em 0;
-  object-fit: cover;
-  width: 100%;
+  margin-bottom: 10%;
 }
 @media (max-width: 800px) {
-  .container .sidebar {
-    display: none;
+  .container {
+    margin-bottom: 20%;
   }
-}
-.container .sidebar-left {
-  margin-right: 2em;
-}
-.container .sidebar-right {
-  margin-left: 2em;
 }
 @media (max-width: 500px) {
   .container {
     padding: 0;
+    margin-top: 7px;
+    margin-bottom: 25%;
   }
 }
 .nav-container {
@@ -417,7 +408,7 @@ nav a {
   padding: 1.75rem 2.5rem;
   border-radius: 0;
   color: #fbeec1;
-  background: #4885a7;
+  background: rgba(72, 133, 167, 0);
   text-decoration: none;
   font-size: 3rem;
   text-align: center;
@@ -427,7 +418,10 @@ nav a {
 }
 nav a:hover {
   background: #fbeec1;
-  color: #4885a7;
+  color: rgba(72, 133, 167, 0);
+}
+nav a:hover {
+  color: rgba(72, 133, 167, 0.9);
 }
 @media (max-width: 500px) {
   nav {
@@ -497,6 +491,9 @@ section.login {
     font-size: 2rem;
   }
 }
+.home.main-content {
+  margin-top: 150px;
+}
 .button {
   padding: 1rem 4rem;
   border-radius: 10px;
@@ -543,9 +540,13 @@ p.tagline {
   height: 35rem;
   padding: 2em 0;
 }
+@media (max-width: 800px) {
+  .about-member img {
+    width: 40%;
+  }
+}
 @media (max-width: 500px) {
   .about-member img {
-    object-fit: cover;
     width: 90%;
     flex: 1;
     overflow: hidden;
@@ -563,6 +564,11 @@ p.tagline {
 .about-member:nth-child(2n) p {
   margin-left: 0;
 }
+@media (max-width: 800px) {
+  .about-member {
+    height: 60rem;
+  }
+}
 @media (max-width: 500px) {
   .about-member {
     flex-direction: column;
@@ -579,7 +585,7 @@ p.tagline {
   }
   .about-member:nth-child(2n) {
     flex-direction: column;
-    background: #4885a7;
+    background: rgba(72, 133, 167, 0.7);
   }
   .about-member:nth-child(2n) div {
     padding: 0;
@@ -590,11 +596,40 @@ p.about-member-name {
   font-size: 4rem;
   margin: 0;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   p.about-member-name {
     font-size: 3rem;
+    text-align: center;
   }
 }
 p.about-member-role {
   font-size: 3rem;
+}
+@media (max-width: 800px) {
+  p.about-member-role {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 2em;
+  font-size: 1.5rem;
+  background: #659dbd;
+}
+footer a {
+  color: #f8e191;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  footer {
+    justify-content: center;
+  }
 }
