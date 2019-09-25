@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Bubblegum Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bubblegum Sans Regular'), local('BubblegumSans-Regular'), url(https://fonts.gstatic.com/s/bubblegumsans/v8/AYCSpXb_Z9EORv1M5QTjEzMEteaAxIc.ttf) format('truetype');
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -311,7 +318,7 @@ html {
 }
 html,
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Bubblegum Sans", cursive, "Ubuntu", sans-serif;
   color: #fbeec1;
   background: #659dbd;
   height: 100%;
@@ -321,7 +328,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Russo One", sans-serif;
+  font-family: "Bubblegum Sans", cursive, "Russo One", sans-serif;
 }
 h2 {
   font-size: 3.2rem;
@@ -450,11 +457,11 @@ section {
   width: 100%;
 }
 section h1 {
-  font-size: 7rem;
+  font-size: 8rem;
   margin: 2rem;
 }
 section p {
-  font-size: 2.25rem;
+  font-size: 3rem;
   text-align: justify;
   margin: 1em 0;
 }
@@ -477,7 +484,7 @@ section.login {
     color: #fbeec1;
     background: #15a74d;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 4rem;
     text-align: center;
     width: 20%;
     margin: 0.5em;
@@ -503,11 +510,11 @@ section.login {
   color: #fbeec1;
   background: #15a74d;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 4rem;
   text-align: center;
   width: 30%;
   margin: 2.5rem 0;
-  min-width: 175px;
+  min-width: 280px;
 }
 .button:hover {
   background: #fbeec1;
