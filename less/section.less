@@ -1,0 +1,40 @@
+section {
+  .flex();
+  width: 100%;
+
+  h1 {
+    font-size: 7rem;
+    margin: 2rem;
+  }
+
+  p {
+    font-size: 2.25rem;
+    text-align: justify;
+    margin: 1em 0;
+  }
+
+  &.login {
+    .flex(@direction: row, @justify: space-evenly);
+
+    @media @phone {
+      .flex(@direction: column, @justify: center, @align: center);
+
+      a {
+        .button(@size: 2rem 0, @radius: 0, @margin: 0.5em);
+        width: 80%;
+      }
+    }
+  }
+
+  @media @phone {
+    h1 {
+      font-size: 5rem;
+    }
+
+    p {
+      width: 100%;
+      font-size: 2rem;
+      //   margin: 1rem 1rem;
+    }
+  }
+}
