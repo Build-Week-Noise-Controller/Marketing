@@ -60,10 +60,11 @@ img {
 
 .container {
   .flex(@direction: row, @align: flex-start);
+  padding: 0 1em;
 
   .sidebar {
     .flex();
-    max-width: 20%;
+    max-width: 12%;
     padding: 1em;
     margin: 0 auto;
 
@@ -77,8 +78,6 @@ img {
     @media @tablet {
       display: none;
     }
-    @media @phone {
-    }
   }
 
   .sidebar-left {
@@ -87,5 +86,9 @@ img {
 
   .sidebar-right {
     margin-left: 2em;
+  }
+
+  @media @phone {
+    padding: 0;
   }
 }
