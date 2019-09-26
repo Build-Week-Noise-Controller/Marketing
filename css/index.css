@@ -552,7 +552,7 @@ p.tagline {
 .about-member {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 35rem;
   padding: 2em 0;
@@ -593,6 +593,17 @@ p.tagline {
 }
 .about-member:nth-child(2n) p {
   margin-left: 0;
+}
+.about-member:nth-child(2n) .about-member-name,
+.about-member:nth-child(2n) .about-member-role {
+  text-align: end;
+}
+@media (max-width: 800px) {
+  .about-member:nth-child(2n) .about-member-name,
+  .about-member:nth-child(2n) .about-member-role {
+    font-size: 3rem;
+    text-align: center;
+  }
 }
 @media (max-width: 800px) {
   .about-member {
