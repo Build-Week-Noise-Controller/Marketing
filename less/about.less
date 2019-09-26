@@ -1,5 +1,5 @@
 .about-member {
-  .flex(@direction: row);
+  .flex(@direction: row, @justify: flex-start);
   height: 35rem;
   padding: 2em 0;
 
@@ -38,6 +38,16 @@
 
     p {
       margin-left: 0;
+    }
+
+    .about-member-name,
+    .about-member-role {
+      text-align: end;
+
+      @media @tablet {
+        font-size: 3rem;
+        text-align: center;
+      }
     }
   }
 
