@@ -1,0 +1,19 @@
+footer {
+  .flex(@direction: row, @justify: flex-end);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 2em;
+  font-size: 1.5rem;
+  background: @background;
+
+  a {
+    color: @main-font-color;
+    text-decoration: none;
+  }
+
+  @media @tablet {
+    justify-content: center;
+  }
+}
