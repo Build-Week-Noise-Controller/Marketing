@@ -1,10 +1,30 @@
 .home.main-content {
   margin-top: 150px;
+
+  @media @phone {
+    margin-top: 60px;
+  }
 }
 
 .button {
   .button(@width: 30%);
   min-width: 280px;
+
+  @media @tablet {
+    font-size: 3rem;
+    width: 20%;
+    min-width: 200px;
+  }
+}
+
+.home h1 {
+  @media @tablet {
+    font-size: 6rem;
+  }
+
+  @media @phone {
+    font-size: 4.5rem;
+  }
 }
 
 p.tagline {

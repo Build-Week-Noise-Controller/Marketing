@@ -321,7 +321,7 @@ body {
   font-family: "Bubblegum Sans", cursive, "Ubuntu", sans-serif;
   color: #f8e191;
   height: 100%;
-  background-image: url("../img/32599.jpg");
+  background-image: url("../img/32599-compressor.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -501,6 +501,11 @@ section.login {
 .home.main-content {
   margin-top: 150px;
 }
+@media (max-width: 500px) {
+  .home.main-content {
+    margin-top: 60px;
+  }
+}
 .button {
   padding: 1rem 4rem;
   border-radius: 10px;
@@ -516,6 +521,23 @@ section.login {
 .button:hover {
   background: #fbeec1;
   color: #15a74d;
+}
+@media (max-width: 800px) {
+  .button {
+    font-size: 3rem;
+    width: 20%;
+    min-width: 200px;
+  }
+}
+@media (max-width: 800px) {
+  .home h1 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 500px) {
+  .home h1 {
+    font-size: 4.5rem;
+  }
 }
 p.tagline {
   text-align: center;
@@ -616,6 +638,11 @@ p.about-member-role {
 @media (max-width: 800px) {
   p.about-member-role {
     font-size: 3rem;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  p.about-member-info {
     text-align: center;
   }
 }
